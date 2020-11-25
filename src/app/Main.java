@@ -3,13 +3,29 @@ package app;
 public class Main {
 
     public static void main(String[] args) {
-        Amplifier amp = new Amplifier("Top-O-Line Amplifier");
-        Tuner tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);
-        DvdPlayer dvd = new DvdPlayer("Top-O-Line DVD Player", amp);
-        CdPlayer cd = new CdPlayer("Top-O-Line CD Player", amp);
-        Projector projector = new Projector("Top-O-Line Projector", dvd);
-        TheaterLights lights = new TheaterLights("Theater Ceiling Lights");
-        Screen screen = new Screen("Theater Screen");
+        Amplifier amp = new Amplifier("Amplifier");
+        Tuner tuner = new Tuner("Tuner", amp);
+        DvdPlayer dvd = new DvdPlayer("DVD Player", amp);
+        CdPlayer cd = new CdPlayer("CD Player", amp);
+        Projector projector = new Projector("Projector", dvd);
+        TheaterLights lights = new TheaterLights("theater Lights");
+        Screen screen = new Screen("screen");
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
+
+        Facade Facade =
+                new Facade(amp, tuner, dvd, cd,
+                        projector, screen, lights, popper);
+
+//        Facade.filmBegin("star wars");
+//        Facade.filmEinde();
+//
+//        Facade.radioBegin(89.00);
+//        Facade.radioEinde();
+//
+//        Facade.cdBegin("hits 2020");
+//        Facade.cdEinde();
+
+        
+
     }
 }
