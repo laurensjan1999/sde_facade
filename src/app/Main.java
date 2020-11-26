@@ -12,15 +12,15 @@ public class Main {
         Screen screen = new Screen("screen");
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
 
-        Facade Facade =
+        Facade facade =
                 new Facade(amp, tuner, dvd, cd,
                         projector, screen, lights, popper);
 
-//        Facade.filmBegin("star wars");
-//        Facade.filmEinde();
+//        facade.filmBegin("star wars");
+//        facade.filmEinde();
 //
-//        Facade.radioBegin(89.00);
-//        Facade.radioEinde();
+//        facade.radioBegin(89.00);
+//        facade.radioEinde();
 //
 //        Facade.cdBegin("hits 2020");
 //        Facade.cdEinde();
